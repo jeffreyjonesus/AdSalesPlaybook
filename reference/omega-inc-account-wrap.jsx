@@ -780,7 +780,7 @@ export default function OmegaAccountWrap() {
   const [expanded, setExpanded] = useState(null);
   const [dict, setDict] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
-  const [chrome, setChrome] = useState(true);
+  const [chrome, setChrome] = useState(false);
   const [active, setActive] = useState("s-a");
 
   useEffect(() => { setSubFilter("All"); }, [productView]);
@@ -1605,15 +1605,6 @@ export default function OmegaAccountWrap() {
         </>
       )}
 
-      <div className="px-3 py-3 flex items-center gap-2">
-        <button onClick={() => setChrome((v) => !v)} className="text-xs px-2 py-1 rounded flex items-center gap-1"
-                style={{ border: `1px solid ${C.rule}`, color: C.muted, background: C.card }}>
-          <PanelsTopLeft size={12} /> {chrome ? "Hide Salesforce page chrome" : "Show Salesforce page chrome"}
-        </button>
-        <span className="text-xs" style={{ color: C.muted }}>
-          Review build — the component is everything below this line; the surrounding page is context only.
-        </span>
-      </div>
 
       <div className="flex gap-3 px-3 pb-6 items-start">
         <main className="flex-1 min-w-0" style={{ maxWidth: 1120 }}>{component}</main>
