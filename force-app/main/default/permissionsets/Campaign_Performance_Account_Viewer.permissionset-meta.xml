@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Campaign Analytics - Account Viewer</label>
+    <description>Grants the Campaign Performance tab on the Account record page. Without this, the tab is hidden even for users who can otherwise view the account.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Campaign_Performance_Access</name>
+    </customPermissions>
+</PermissionSet>

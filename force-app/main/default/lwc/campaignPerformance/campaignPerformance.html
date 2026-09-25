@@ -1,0 +1,18 @@
+<template>
+    <template lwc:if={hasAccess}>
+        <div class="wrap">
+            <iframe
+                class="wrap__frame"
+                src={reportUrl}
+                style={frameStyle}
+                title="Omega, Inc campaign performance report"
+            ></iframe>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="denied">
+            You don't have access to the campaign performance report. Ask your
+            administrator for the Campaign Analytics - Account Viewer permission set.
+        </div>
+    </template>
+</template>
