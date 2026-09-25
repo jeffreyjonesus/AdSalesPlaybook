@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Campaign Analytics</masterLabel>
+    <description>Embeds the Stellar Media campaign analytics static resource.</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage">
+            <property
+                name="frameHeight"
+                type="Integer"
+                label="Frame height (px)"
+                description="Visible height of the embedded report. The report scrolls internally, so this sets the window onto it rather than the total page height."
+                default="1000"
+                min="600"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

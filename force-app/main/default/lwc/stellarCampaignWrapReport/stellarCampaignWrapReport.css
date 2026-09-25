@@ -1,0 +1,9 @@
+.wrap {
+    background: #f3f3f3;
+}
+
+.wrap__frame {
+    display: block;
+    width: 100%;
+    border: 0;
+}

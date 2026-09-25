@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Campaign Analytics - Viewer</label>
+    <description>Makes the Campaign Analytics tab available to a user. The user can add it to their navigation, but it is not switched on by default.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <tabSettings>
+        <tab>Stellar_Campaign_Wrap_Report</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
+</PermissionSet>

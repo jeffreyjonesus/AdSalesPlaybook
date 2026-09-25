@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <name>main</name>
+        <type>Region</type>
+        <itemInstances>
+            <componentInstance>
+                <componentName>stellarCampaignWrapReport</componentName>
+                <componentInstanceProperties>
+                    <name>frameHeight</name>
+                    <value>1000</value>
+                </componentInstanceProperties>
+                <identifier>stellarCampaignWrapReport1</identifier>
+            </componentInstance>
+        </itemInstances>
+    </flexiPageRegions>
+    <masterLabel>Campaign Analytics</masterLabel>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>
