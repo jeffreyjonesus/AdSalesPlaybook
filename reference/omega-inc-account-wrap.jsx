@@ -12,7 +12,7 @@ import {
 
 /* ============================================================================
    STELLAR MEDIA — ACCOUNT CAMPAIGN WRAP
-   Lightning component, Account record page: Omega, Inc (ACT-004821)
+   Lightning component, Account record page: Omega, Inc. (ACT-004821)
    Scope: this account only. No book-level quota, no seller benchmarking.
    ========================================================================== */
 
@@ -70,7 +70,7 @@ const WEEKS = Array.from({ length: 39 }, (_, i) => {
 
 /* ---------- the account record ---------- */
 const ACCOUNT = {
-  name: "Omega, Inc",
+  name: "Omega, Inc.",
   number: "ACT-004821",
   sfId: "001Rx00000Kd41Q",
   type: "Customer — Direct",

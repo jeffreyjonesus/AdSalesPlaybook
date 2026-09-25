@@ -86,7 +86,7 @@ const WEEKS = Array.from({ length: 39 }, (_, i) => {
 
 /* ---------- advertisers ---------- */
 const ADVERTISERS = {
-  "Omega, Inc":   { cat: "Auto",    prior: 3120, renewalNote: "Upfront anchor" },
+  "Omega, Inc.":   { cat: "Auto",    prior: 3120, renewalNote: "Upfront anchor" },
   "Foundry Auto Group": { cat: "Auto",    prior: 1610, renewalNote: "Renewed Q2" },
   "Cascade Bank":       { cat: "Finance", prior: 2440, renewalNote: "Upfront anchor" },
   "Torchlight Insurance":{cat: "Finance", prior: 2180, renewalNote: "In renewal" },
@@ -108,12 +108,12 @@ const ADVERTISERS = {
               ctr, cvr (conv rate %), lift (brand lift pts), ir (incremental reach %)
    oc = outcome index vs goal (100 = goal met)                                   */
 const SEED = [
-  // Omega, Inc — 3,600
-  {n:"Q1 Model Year Clearance",a:"Omega, Inc",g:"linear",p:"Primetime",s:1,e:13,b:980,o:"Awareness",cpp:9400,post:103,c3:114,pre:1.4,oc:112},
-  {n:"Ridgeline Launch — Sports",a:"Omega, Inc",g:"linear",p:"Sports",s:5,e:14,b:760,o:"Awareness",cpp:13800,post:101,c3:121,pre:2.1,oc:118},
-  {n:"Always-On CTV",a:"Omega, Inc",g:"streaming",p:"CTV/Streaming",s:1,e:39,b:1020,o:"Reach",cmp:0,cpm:47,del:103,vcr:94,vw:88,ot:89,ctr:0.44,cvr:2.6,lift:6.2,ir:41,oc:131},
-  {n:"Intender Retargeting",a:"Omega, Inc",g:"digital",p:"Display",s:1,e:39,b:340,o:"Performance",cpm:11,del:104,vcr:0,vw:79,ot:83,ctr:0.62,cvr:3.4,lift:1.8,ir:6,oc:121},
-  {n:"Summer Drive Event",a:"Omega, Inc",g:"digital",p:"Online video",s:22,e:32,b:500,o:"Consideration",cpm:29,del:99,vcr:81,vw:74,ot:76,ctr:0.38,cvr:1.7,lift:3.1,ir:12,oc:96},
+  // Omega, Inc. — 3,600
+  {n:"Q1 Model Year Clearance",a:"Omega, Inc.",g:"linear",p:"Primetime",s:1,e:13,b:980,o:"Awareness",cpp:9400,post:103,c3:114,pre:1.4,oc:112},
+  {n:"Ridgeline Launch — Sports",a:"Omega, Inc.",g:"linear",p:"Sports",s:5,e:14,b:760,o:"Awareness",cpp:13800,post:101,c3:121,pre:2.1,oc:118},
+  {n:"Always-On CTV",a:"Omega, Inc.",g:"streaming",p:"CTV/Streaming",s:1,e:39,b:1020,o:"Reach",cmp:0,cpm:47,del:103,vcr:94,vw:88,ot:89,ctr:0.44,cvr:2.6,lift:6.2,ir:41,oc:131},
+  {n:"Intender Retargeting",a:"Omega, Inc.",g:"digital",p:"Display",s:1,e:39,b:340,o:"Performance",cpm:11,del:104,vcr:0,vw:79,ot:83,ctr:0.62,cvr:3.4,lift:1.8,ir:6,oc:121},
+  {n:"Summer Drive Event",a:"Omega, Inc.",g:"digital",p:"Online video",s:22,e:32,b:500,o:"Consideration",cpm:29,del:99,vcr:81,vw:74,ot:76,ctr:0.38,cvr:1.7,lift:3.1,ir:12,oc:96},
   // Foundry Auto Group — 1,500
   {n:"Weekend Sales Event",a:"Foundry Auto Group",g:"linear",p:"Syndication",s:1,e:39,b:620,o:"Performance",cpp:4100,post:99,c3:96,pre:2.6,oc:94},
   {n:"Local Dealer FAST",a:"Foundry Auto Group",g:"streaming",p:"CTV/Streaming",s:8,e:39,b:540,o:"Performance",cpm:34,del:102,vcr:90,vw:85,ot:81,ctr:0.35,cvr:2.2,lift:3.4,ir:24,oc:108},
@@ -2088,7 +2088,7 @@ export default function StellarWrapReport() {
                   </div>
                   <div className="p-2.5 rounded text-xs" style={{ background: C.greenSoft, color: "#194E31" }}>
                     <div className="font-semibold mb-1 flex items-center gap-1"><CheckCircle2 size={12} /> FY27 upfront committed</div>
-                    Omega, Inc $4.1M, Cascade Bank $3.2M, Torchlight Insurance $2.4M, Meridian Foods $1.6M.
+                    Omega, Inc. $4.1M, Cascade Bank $3.2M, Torchlight Insurance $2.4M, Meridian Foods $1.6M.
                     $11.3M committed before scatter, against a $24M FY27 quota.
                   </div>
                 </div>
