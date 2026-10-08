@@ -1,0 +1,29 @@
+import { LightningElement, api } from 'lwc';
+import REPORT_URL from '@salesforce/resourceUrl/CampaignWrapReport';
+import HAS_ACCESS from '@salesforce/customPermission/Campaign_Wrap_Report_Access';
+
+const DEFAULT_HEIGHT = 1000;
+
+// resourceUrl bakes in a version stamp when the module is compiled, so deploying
+// a new static resource alone leaves cached modules pointing at the old copy.
+// Bump this whenever the report HTML changes to force browsers off the stale one.
+const REPORT_VERSION = 1;
+
+export default class CampaignWrapReport extends LightningElement {
+    // The report has a sticky header and scroll-spy rail that track its own scroll
+    // position, so the frame is kept near viewport height and lets the report
+    // scroll internally. Stretching the frame to full content height breaks both.
+    @api frameHeight = DEFAULT_HEIGHT;
+    // Populated by the record page; the report renders its own static dataset, so
+    // this is unused today and exists so a future data-bound version has the Id.
+    @api recordId;
+    reportUrl = `${REPORT_URL}?v=${REPORT_VERSION}`;
+    // Access is gated here rather than by a FlexiPage visibility rule: $Permission
+    // references to custom permissions do not resolve in flexipage criteria.
+    hasAccess = HAS_ACCESS === true;
+
+    get frameStyle() {
+        const height = parseInt(this.frameHeight, 10) || DEFAULT_HEIGHT;
+        return `height:${height}px;`;
+    }
+}

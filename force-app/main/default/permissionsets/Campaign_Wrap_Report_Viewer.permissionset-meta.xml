@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Campaign Analytics - Wrap Report Viewer</label>
+    <description>Grants the Wrap Report tab on the Campaign record page. Without this, the tab is hidden even for users who can otherwise view the campaign.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Campaign_Wrap_Report_Access</name>
+    </customPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
